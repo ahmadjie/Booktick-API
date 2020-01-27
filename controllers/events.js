@@ -22,7 +22,7 @@ exports.eventsByTitle = (req, res) => {
 		},
 		where: {
 			title: {
-				[Op.substring]: title
+				[Op.iLike]: title
 			}
 		},
 		include: [
